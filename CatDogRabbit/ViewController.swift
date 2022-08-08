@@ -9,11 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var mainImage: UIImageView!
+    var imagePicker = UIImagePickerController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        imagePicker.delegate = self
     }
 
+    @IBAction func selectImageTapped(_ sender: UIBarButtonItem) {
+    }
+    
+}
 
+extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
 }
 
