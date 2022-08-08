@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BCB9A6628A1877E00D3065D /* CatDogClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9BCB9A6528A1877E00D3065D /* CatDogClassifier.mlmodel */; };
 		9BF9622F289FDC60005129A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF9622E289FDC60005129A4 /* AppDelegate.swift */; };
 		9BF96231289FDC60005129A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF96230289FDC60005129A4 /* SceneDelegate.swift */; };
 		9BF96233289FDC60005129A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF96232289FDC60005129A4 /* ViewController.swift */; };
 		9BF96236289FDC60005129A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BF96234289FDC60005129A4 /* Main.storyboard */; };
 		9BF96238289FDC61005129A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BF96237289FDC61005129A4 /* Assets.xcassets */; };
 		9BF9623B289FDC61005129A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BF96239289FDC61005129A4 /* LaunchScreen.storyboard */; };
-		9BF96243289FDC6F005129A4 /* CatDogRabbitClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9BF96242289FDC6F005129A4 /* CatDogRabbitClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9BCB9A6528A1877E00D3065D /* CatDogClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CatDogClassifier.mlmodel; sourceTree = "<group>"; };
 		9BF9622B289FDC60005129A4 /* CatDogRabbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatDogRabbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BF9622E289FDC60005129A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BF96230289FDC60005129A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +26,6 @@
 		9BF96237289FDC61005129A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BF9623A289FDC61005129A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BF9623C289FDC61005129A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9BF96242289FDC6F005129A4 /* CatDogRabbitClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CatDogRabbitClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 				9BF96234289FDC60005129A4 /* Main.storyboard */,
 				9BF96237289FDC61005129A4 /* Assets.xcassets */,
 				9BF96239289FDC61005129A4 /* LaunchScreen.storyboard */,
-				9BF96242289FDC6F005129A4 /* CatDogRabbitClassifier.mlmodel */,
+				9BCB9A6528A1877E00D3065D /* CatDogClassifier.mlmodel */,
 				9BF9623C289FDC61005129A4 /* Info.plist */,
 			);
 			path = CatDogRabbit;
@@ -144,7 +144,7 @@
 				9BF96233289FDC60005129A4 /* ViewController.swift in Sources */,
 				9BF9622F289FDC60005129A4 /* AppDelegate.swift in Sources */,
 				9BF96231289FDC60005129A4 /* SceneDelegate.swift in Sources */,
-				9BF96243289FDC6F005129A4 /* CatDogRabbitClassifier.mlmodel in Sources */,
+				9BCB9A6628A1877E00D3065D /* CatDogClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
