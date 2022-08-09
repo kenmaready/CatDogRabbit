@@ -1,0 +1,24 @@
+{
+    "fileFormatVersion": "1.0.0",
+    "itemInfoEntries": {
+        "00592E3A-3CE0-419B-9245-60A1739035C6": {
+            "author": "com.apple.CoreML",
+            "description": "External Metadata Overlay",
+            "name": "Metadata.json",
+            "path": "com.apple.CoreML/Metadata.json"
+        },
+        "3614BE1A-2AD6-46BC-923D-87655FDB71AB": {
+            "author": "com.apple.CoreML",
+            "description": "CoreML Model Specification",
+            "name": "CatDogClassifier.mlmodel",
+            "path": "com.apple.CoreML/CatDogClassifier.mlmodel"
+        },
+        "D0BC4F45-7B00-47E8-8106-FE31A3432F75": {
+            "author": "com.apple.CoreML",
+            "description": "External FeatureDescription Overlay",
+            "name": "FeatureDescriptions.json",
+            "path": "com.apple.CoreML/FeatureDescriptions.json"
+        }
+    },
+    "rootModelIdentifier": "3614BE1A-2AD6-46BC-923D-87655FDB71AB"
+}

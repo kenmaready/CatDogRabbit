@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9BCB9A6628A1877E00D3065D /* CatDogClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9BCB9A6528A1877E00D3065D /* CatDogClassifier.mlmodel */; };
+		9BCB9A6A28A195E100D3065D /* CatDogClassifier.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 9BCB9A6928A195E100D3065D /* CatDogClassifier.mlpackage */; };
+		9BCB9A6C28A1A3B900D3065D /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCB9A6B28A1A3B900D3065D /* ImagePredictor.swift */; };
 		9BF9622F289FDC60005129A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF9622E289FDC60005129A4 /* AppDelegate.swift */; };
 		9BF96231289FDC60005129A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF96230289FDC60005129A4 /* SceneDelegate.swift */; };
 		9BF96233289FDC60005129A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF96232289FDC60005129A4 /* ViewController.swift */; };
@@ -17,7 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9BCB9A6528A1877E00D3065D /* CatDogClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CatDogClassifier.mlmodel; sourceTree = "<group>"; };
+		9BCB9A6928A195E100D3065D /* CatDogClassifier.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = CatDogClassifier.mlpackage; sourceTree = "<group>"; };
+		9BCB9A6B28A1A3B900D3065D /* ImagePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePredictor.swift; sourceTree = "<group>"; };
 		9BF9622B289FDC60005129A4 /* CatDogRabbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatDogRabbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BF9622E289FDC60005129A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BF96230289FDC60005129A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,10 +63,11 @@
 				9BF9622E289FDC60005129A4 /* AppDelegate.swift */,
 				9BF96230289FDC60005129A4 /* SceneDelegate.swift */,
 				9BF96232289FDC60005129A4 /* ViewController.swift */,
+				9BCB9A6B28A1A3B900D3065D /* ImagePredictor.swift */,
 				9BF96234289FDC60005129A4 /* Main.storyboard */,
 				9BF96237289FDC61005129A4 /* Assets.xcassets */,
 				9BF96239289FDC61005129A4 /* LaunchScreen.storyboard */,
-				9BCB9A6528A1877E00D3065D /* CatDogClassifier.mlmodel */,
+				9BCB9A6928A195E100D3065D /* CatDogClassifier.mlpackage */,
 				9BF9623C289FDC61005129A4 /* Info.plist */,
 			);
 			path = CatDogRabbit;
@@ -144,7 +147,8 @@
 				9BF96233289FDC60005129A4 /* ViewController.swift in Sources */,
 				9BF9622F289FDC60005129A4 /* AppDelegate.swift in Sources */,
 				9BF96231289FDC60005129A4 /* SceneDelegate.swift in Sources */,
-				9BCB9A6628A1877E00D3065D /* CatDogClassifier.mlmodel in Sources */,
+				9BCB9A6A28A195E100D3065D /* CatDogClassifier.mlpackage in Sources */,
+				9BCB9A6C28A1A3B900D3065D /* ImagePredictor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

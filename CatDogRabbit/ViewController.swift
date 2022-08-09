@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var mainImage: UIImageView!
     var imagePicker = UIImagePickerController()
+    let predictor = ImagePredictor()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,45 +41,30 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            print("selected image: \(image)")
             mainImage.contentMode = .scaleAspectFit
             mainImage.image = image
-            
-            guard let ciImage = CIImage(image: image) else {
-                fatalError("Error occurred while converting selected image to CIImage.")
-            }
-            
-            analyze(ciImage)
+            analyze(image)
         } else {
             print("unable to convert image to UIImage...")
         }
         imagePicker.dismiss(animated: true, completion: nil)
     }
     
-    func analyze(_ image: CIImage) {
-        guard let model = try? VNCoreMLModel(for: CatDogClassifier().model) else {
-            fatalError("Error occurred during instantiation of CatDogRabbitClassifier model.")
-        }
-        
-        let request = VNCoreMLRequest(model: model) { request, error in
-            guard let results = request.results as? [VNClassificationObservation] else {
-                fatalError("Error occurred during processing image via classification model.")
-            }
+    func analyze(_ image: UIImage) {
             
-            let classification = results.first
-            for result in results {
-                print("\(result.identifier): \(result.confidence)")
-            }
-            
-            self.navigationItem.title = classification?.identifier.capitalized
-        }
-        
-        let handler = VNImageRequestHandler(ciImage: image)
-        
         do {
-            try handler.perform([request])
+            try predictor.predict(for: image, completionHandler: { predictions in
+                if let safePredictions = predictions {
+                    for prediction in safePredictions {
+                        print("Guess: \(prediction.classification), confidence: \(prediction.confidence)")
+                    }
+                }
+            })
         } catch {
-            print("Error occurred in submitting request to classification model.")
+            print("Error occurred in retrieving predictions from model: \(error.localizedDescription)")
         }
+        
     }
 }
 
